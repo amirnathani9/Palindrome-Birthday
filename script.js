@@ -45,11 +45,23 @@ function getDateInAllFormats(date){
     return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd]
 }
 
+function checkPalindromeForAllFormats(date){
+    var listOfDateFormat = getDateInAllFormats(date);
+    var palindromeList = [];
+    for(var i =0 ; i<listOfDateFormat.length; i++){
+        var result = isPalindrome(listOfDateFormat[i])
+        palindromeList.push(result);
+    }
+    return palindromeList;
+}
 
-var date = {day: 4, month: 05, year: 2020};
+
+var date = {day: 02, month: 2, year: 2020};
 var dateStr = getDateAsString(date);
 
-console.log(getDateInAllFormats(dateStr))
+console.log(getDateInAllFormats(dateStr));
+
+console.log(checkPalindromeForAllFormats(dateStr))
 
 
 
