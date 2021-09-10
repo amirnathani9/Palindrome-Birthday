@@ -33,10 +33,24 @@ function getDateAsString(date){
     return dateStr
 }
 
+function getDateInAllFormats(date){
+
+    var ddmmyyyy = date.day + date.month + date.year;
+    var mmddyyyy = date.month + date.day + date.year;
+    var yyyymmdd = date.year + date.month + date.day;
+    var ddmmyy = date.day + date.month + date.year.slice(-2);
+    var mmddyy = date.month + date.day + date.year.slice(-2);
+    var yymmdd = date.year.slice(-2) + date.month + date.day;
+
+    return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd]
+}
+
 
 var date = {day: 4, month: 05, year: 2020};
+var dateStr = getDateAsString(date);
 
-console.log(getDateAsString(date))
+console.log(getDateInAllFormats(dateStr))
+
 
 
 
