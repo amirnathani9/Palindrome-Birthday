@@ -1,8 +1,15 @@
 function reverseString(str){
     var listOfChars = str.split('');
     var listOFReverseChar = listOfChars.reverse();
-    var reversedChars = listOFReverseChar.join('');
-    return reversedChars;
+    var reversedString = listOFReverseChar.join('');
+    return reversedString;
 }
 
-console.log(reverseString('zaid'));
+function isPalindrome(str){
+    var reversedString = reverseString(str);
+    return str === reversedString;
+}
+
+console.log(isPalindrome('oppo'))
+
+
