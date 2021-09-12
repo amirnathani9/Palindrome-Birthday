@@ -108,13 +108,36 @@ function getNextDate(date) {
     };
 }
 
+function getNextPalindromeDate(date){
+   
+    var nextDate = getNextDate(date);
+    var nextDateCtr = 0;
+
+    while (1) {
+        nextDateCtr++;
+        var nextDateStr = getDateAsString(nextDate);
+        var nextPalindrome = checkPalindromeForAllFormats(nextDateStr);
+        
+        for(let i=0; i < nextPalindrome.length; i++){
+            if (nextPalindrome[i]){
+                return [nextDateCtr, nextDate]
+            }
+        }
+        nextDate = getNextDate(nextDate);
+    }
+    
+}
+
 
 
 var date = {
-    day: 31,
-    month: 12,
+    day: 5,
+    month: 2,
     year: 2020
 };
 
+var dateStr=getDateAsString(date)
 
-console.log(getNextDate(date));
+console.log(checkPalindromeForAllFormats(dateStr))
+
+console.log(getNextPalindromeDate(date));
