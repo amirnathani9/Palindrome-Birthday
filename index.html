@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,47 @@
     <link rel="stylesheet" href="style.css" />
     <title>Palindrome Birthday</title>
 </head>
+
 <body>
-    <label for="input-date">Enter your Birthdate</label>
-    <input type="date" id="input-date" />
-    <button class="check-btn">Check</button>
-    <p class="output-box"></p>
+    <main class="container">
+        <h1>Palindrome Birthday</h1>
+        <label for="input-date" class="input-label">Enter your Birthdate</label>
+        <input type="date" id="input-date" class="input" required />
+        <button id="check-btn" class="btn">Check</button>
+        <p id="output-box"></p>
+        <div class="loading hidden">
+            <img src="https://media.giphy.com/media/1lvotGQwhzi6O0gQtV/giphy.gif?cid=ecf05e47uiazhiqbt37ddw0sge7uo73p9e00kyrv4uaj45kh&rid=giphy.gif&ct=g"
+                alt="loading" />
+        </div>
+    </main>
 
-
+    <footer class="list-non-bullet footer">
+        <hr>
+        <div class="footer-line">Connect With Me</div>
+        <ul class="social-pills">
+            <li class="list-item-inline">
+                <a href="https://www.linkedin.com/in/aamirnathani/" target="  _blank "
+                    class="fa fa-2x fa-linkedin-square pr-4 social-logo " aria-hidden="true ">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a href="https://twitter.com/AAMIR12855467" target=" _blank "
+                    class="fa fa-2x fa-twitter-square pr-4 social-logo" aria-hidden="true">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a href="https://github.com/amirnathani9" target=" _blank "
+                    class="fa fa-2x fa-github-square pr-4 social-logo" aria-hidden="true ">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a href="mailto:amirnathani9@gmail.com" target=" _blank "
+                    class="fa fa-2x fa-envelope-o pr-4 social-logo" aria-hidden="true ">
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
