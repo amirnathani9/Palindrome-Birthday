@@ -184,7 +184,7 @@ var outputBox = document.querySelector('#output-box');
 var loadingBox = document.querySelector(".loading");
 
 
-function checkHandler(e) {
+function finalResult(e) {
     var bdayString = inputDate.value
 
 
@@ -229,11 +229,11 @@ function checkHandler(e) {
 }
 
 
-function showResuts() {
+function checkHandler() {
     if (inputDate.value) {
         outputBox.innerText = "";
         loadingBox.classList.remove("hidden");
-        window.setTimeout(checkHandler, 3000);
+        window.setTimeout(finalResult, 3000);
     } else {
         outputBox.innerText = "Please enter date to show results.";
     }
@@ -242,4 +242,4 @@ function showResuts() {
 
 
 
-checkBtn.addEventListener('click', showResuts)
+checkBtn.addEventListener('click', checkHandler)
