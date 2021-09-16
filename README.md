@@ -1,26 +1,20 @@
-# Fun With Triangles(mark12)
+# PalindromeBirthday(mark13)
 
-The App containes Quiz and Calculators which helps to learn the Triangles. 
+In this app we can check, the birthday is palindrome or not. If not than the nearest palindrome date will be shown.
 
 
 ## How to Use 
 
-- Click the section on the website which you want to open
-1. Triangle Quiz: Select answers and click on the button to check the score.
-2. isTriangle: Enter the three input and click the button to check the given sides are triangle or not.
-3. Hypotenuse: Enter the inputs and click the button to check the result.
-4. Area of Triangle: Enter the inputs and click the button to check the result
+1. Enter your birthday
+2. Click the button
+3. Output will shown below the button
 
 
 ## Programming Language
-
-1. Html
-2. Css
-3. Javascript
+	@@ -18,7 +20,7 @@ In this app we can check, the birthday is palindrome or not. If not than the nea
 
 ## Link of the webApp
 
-[https://funwithtriangles-marktwelve.netlify.app/](https://funwithtriangles-marktwelve.netlify.app/)
+[https://palindriomebirthday-mark13.netlify.app/](https://palindriomebirthday-mark13.netlify.app/)
 
 Don't forget to leave a ⭐ if you found this useful.
-
