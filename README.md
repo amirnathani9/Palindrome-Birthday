@@ -11,8 +11,9 @@ In this app we can check, the birthday is palindrome or not. If not than the nea
 
 
 ## Programming Language
-
-In this app we can check, the birthday is palindrome or not. If not than the nea
+ 1. Html
+ 2. Css
+ 3. Javascript
 
 ## Link of the webApp
 
